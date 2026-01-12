@@ -11,7 +11,7 @@ generation_config = {
 
 # Course Model
 model1 = genai.GenerativeModel(
-  model_name="gemini-1.5-pro",
+  model_name="gemini-2.5-flash",
   generation_config=generation_config,
   system_instruction='''
   Give all your responses in the custom JSON format I specified for the course information. 
@@ -28,7 +28,7 @@ model1 = genai.GenerativeModel(
 
 # Listing Model
 model2 = genai.GenerativeModel(
-  model_name="gemini-1.5-pro",
+  model_name="gemini-2.5-flash",
   generation_config=generation_config,
   system_instruction=''''Give all your answers in the special JSON format I have specified for the course information. 
   Do not add any information outside this format and return only the requested JSON object. 
@@ -53,7 +53,7 @@ model2 = genai.GenerativeModel(
 
 # Quiz Model
 model3 = genai.GenerativeModel(
-  model_name="gemini-1.5-pro",
+  model_name="gemini-2.5-flash",
     generation_config=generation_config,
     system_instruction='''Generate quiz questions in the following JSON format only:
     {
@@ -80,7 +80,7 @@ model3 = genai.GenerativeModel(
 
 # Normal Student Talk AI Model
 model4 = genai.GenerativeModel(
-  model_name="gemini-1.5-pro",
+  model_name="gemini-2.5-flash",
   generation_config=generation_config,
   system_instruction='''
   Your goal as an artificial intelligence to help university students with their studies, 
@@ -116,7 +116,7 @@ model4 = genai.GenerativeModel(
 
 # Lecture Note Model
 model5 = genai.GenerativeModel(
-  model_name="gemini-1.5-pro",
+  model_name="gemini-2.5-flash",
   generation_config=generation_config,
   system_instruction='''
   Pay attention to the following points when creating these lecture notes:
@@ -136,7 +136,7 @@ model5 = genai.GenerativeModel(
 
 # Explanation Model
 model6 = genai.GenerativeModel(
-  model_name="gemini-1.5-pro",
+  model_name="gemini-2.5-flash",
   generation_config=generation_config,
   system_instruction='''
     You are an expert educational AI tutor. Your task is to provide clear, comprehensive explanations for quiz questions. Format your response as follows:
